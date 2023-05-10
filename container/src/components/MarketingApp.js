@@ -2,11 +2,11 @@ import React, { useRef, useEffect } from "react";
 import { mount } from "marketing/MarketingApp";
 
 const MarketingApp = () => {
-  const ref = useRef(null);
+  const newRef = useRef(null);
   useEffect(() => {
-    mount(ref.current);
+    mount(newRef.current);
   }, []);
-  return <div ref={ref} />;
+  return <div ref={newRef} />;
 };
 
 export default MarketingApp;
